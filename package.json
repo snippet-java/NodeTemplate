@@ -8,6 +8,7 @@
     "path": "*",
     "dynamic-routes": "*",
     "forms": "*",
+    "sandbox-superglue": "*",
     "cf-deployment-tracker-client": "*",
     "alchemy-api": "*",
     "watson-developer-cloud" : "*"    
