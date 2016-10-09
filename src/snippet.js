@@ -43,7 +43,7 @@ if (require.main === module) {
 
 //	Template for making above code available
 //	as service via superglue routine
-	var superglue = require('../lib/superglue.js');
+	var superglue = require('sandbox-superglue');
 	module.exports = {
 			path: '/'+unitpath,
 			priority: 1,
