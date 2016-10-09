@@ -1,7 +1,7 @@
 applications:
-- name: {{name}}
+- name: snippet
   memory: 256M
   disk_quota: 512M
-  host: {{name}}-${random-word}
+  host: snippet-${random-word}
   command: node app.js
   buildpack: sdk-for-nodejs
