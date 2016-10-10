@@ -6,9 +6,9 @@ app = express(),
 bodyParser = require('body-parser');
 
 app.set('port', process.env.PORT || 3000);
-//app.set('views', __dirname + '/views');
 
-app.use(bodyParser());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 DynamicRoutes(app, __dirname + '/src/');
