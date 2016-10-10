@@ -6,7 +6,7 @@ var parameters = {};
 
 ////////////////////////////////////////////////////////
 // Main function                                      //
-// Output will be reflected via console.log function  //
+// Output will be reflected via console.log functions  //
 ////////////////////////////////////////////////////////
 function process(req_parameters, callback) {
 	// actual code will be pasted here
