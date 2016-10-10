@@ -9,7 +9,9 @@
     "dynamic-routes": "*",
     "forms": "*",
     "sandbox-superglue": "*",
-    "cf-deployment-tracker-client": "*"
+    "cf-deployment-tracker-client": "*",
+    "watson-developer-cloud": "*",
+    "fs": "*"
   },
   "scripts": {
     "start": "node index.js"
