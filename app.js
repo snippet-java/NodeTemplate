@@ -2,8 +2,8 @@ var express = require('express'),
 http = require('http'),
 path = require('path'),
 DynamicRoutes = require('dynamic-routes'),
-app = express(),
-bodyParser = require('body-parser');
+bodyParser = require('body-parser'),
+app = express();
 
 app.set('port', process.env.PORT || 3000);
 
