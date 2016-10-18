@@ -3,7 +3,7 @@ http = require('http'),
 path = require('path'),
 DynamicRoutes = require('dynamic-routes'),
 bodyParser = require('body-parser'),
-app = express();
+app = express();;
 
 app.set('port', process.env.PORT || 3000);
 
