@@ -10,7 +10,23 @@ var parameters = {};
 ////////////////////////////////////////////////////////
 function process(req_parameters, callback) {
 	// actual code will be pasted here
-	{{code}}  
+	var watson = require('watson-developer-cloud');
+var alchemy_language = watson.alchemy_language({
+api_key : your_api_key_here
+});
+var parameters = {
+text : "I purchased this card from Best Buy for around $69 to use in my new camcorder. It's perfect. The read/write speed is exactly what I needed to record HD video and the storage ca-pacity is enough for several hours of video. I wish it had been a little cheaper when I bought it. I see it's on sale now so get it while you can before the price goes back up!"
+};
+alchemy_language.emotion(parameters, function(error, response) {
+if (error || response.status === "ERROR") {
+onError(error, response); // function to be defined by you
+} else {
+console.log(JSON.stringify(response, null, 2));
+var docEmotions = response.docEmotions;
+// process object 'docEmotions' that contains properties
+// 'anger', 'disgust', 'fear', 'joy', 'sadness'
+}
+});  
 }
 
 ////////////////////////////////////////////////////////
