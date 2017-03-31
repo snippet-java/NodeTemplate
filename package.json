@@ -9,7 +9,9 @@
     "dynamic-routes": "*",
     "forms": "*",
     "sandbox-superglue": "*",
-    "cf-deployment-tracker-client": "*"
+    "cf-deployment-tracker-client": "*",
+    "cloudant": "*",
+    "../lib/superglue.js": "*"
   },
   "scripts": {
     "start": "node index.js"
